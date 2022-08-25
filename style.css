@@ -7,7 +7,7 @@
 }
 body {
   margin: 10px !important;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-menu {
@@ -360,4 +360,85 @@ p.log {
 .extras span {
   color: #ec0000;
   text-decoration: underline;
+}
+
+.exp-benefits{
+  color: #474747;;
+}
+
+.row-one{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  padding: 0 10%;
+  color: #474747;
+}
+
+.row-one h3{
+  font-size: 30px;
+  font-weight: 300 !important;
+}
+
+.exp-header{
+  text-align: center;
+}
+
+.exp-header h3{
+  font-size: 44px;
+  font-weight: 300;
+}
+
+.exp-header p{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.row-one li{
+  inline-size: 70%;
+  overflow-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.row-one ul{
+  margin-top: 15px;
+}
+
+.extras-container{
+  margin-left: -15%;
+}
+
+.security-container li{
+  width: 50%;
+}
+
+.row-one ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.open-ac{
+  background-color: red;
+  height: 15vh !important;
+  display: flex;
+  flex-direction: row;
+  gap:20%;
+  margin-top: 5%;
+}
+
+.arrow{
+  width: 15%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.open-ac h3{
+  margin: auto;
+  width: 50%;
+  color:white;
+  font-size: 44px;
+  font-weight: 300;
 }

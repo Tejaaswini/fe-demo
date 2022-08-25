@@ -206,6 +206,7 @@ p.log {
   flex-direction: row;
   padding: 10% 5%;
   gap: 5%;
+  color: #474747;
 }
 
 .sub-hero h2 {
@@ -350,6 +351,7 @@ p.log {
 
 .two {
   display: flex;
+  flex-direction: row;
 }
 .lines {
   border: 1px solid #ec0000;
@@ -409,6 +411,11 @@ p.log {
 
 .security-container li{
   width: 50%;
+}
+
+.align-dis{
+  display: flex;
+  flex-direction: row;
 }
 
 .row-one ul li::before {
@@ -606,5 +613,71 @@ span.psw {
   }
   .cancelbtn {
      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .sub-hero{
+    flex-direction: column;
+    height: 90vh;
+  }
+  .image img{
+    width: 50%;
+    height: 30%;
+  }
+  .credit-card img{
+    margin-left: -35% !important;
+    width: 80vw !important;
+  }
+  .private h3{
+    padding-top: 550px;
+  }
+  .line{
+    margin-top: 25%;
+  }
+  .two{
+    flex-direction: column;
+  }
+  .secondary-hero{
+    height: 1950px;
+  }
+  .row-one{
+    flex-direction: column;
+  }
+  .security-container li{
+    width: 80%;
+  }
+  .extras-container{
+    margin-left: 0%;
+  }
+  .open-ac h3{
+    font-size: 30px;
+  }
+  .open-ac{
+    width:97vw;
+  }
+  .santander-one{
+    width:97vw;
+  }
+
+  .santander-one h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sub-hero{
+    width:97vw;
+  }
+  
+  .secondary-hero{
+    width: 97vw;
+  }
+
+  .exp-header h3{
+    font-size: 24px;
+  }
+
+  .exp-header p{
+    font-size: 14px;
+    font-weight: 300;
   }
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      width: 600px;
+    }
+    .part1 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+    .search {
+      justify-content: flex-end;
+      height: 35px;
+      background-color: whitesmoke;
+      display: flex;
+      align-items: center;
+      border: 1px solid whitesmoke;
+    }
+    .s-btn {
+      font-size: 20px;
+      border: none;
+      color: red;
+      background-color: whitesmoke;
+      cursor: pointer;
+    }
+    .search-txt {
+      width: 0;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      background: transparent;
+      transition: 1s;
+    }
+    ::placeholder {
+      color: red;
+    }
+    .active {
+      background: whitesmoke;
+      border: 1px solid red;
+    }
+
+    .active .search-txt {
+      width: 350px;
+      padding: 0 20px;
+    }
+    .menu-i {
+  position: relative;
+  border-right: 2px solid white;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    width: 70px;
+    height: 45px;
+    background-color: red;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.bar {
+  width: 29px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.4s ease-in;
+
+}
+.red-2{
+    height: 45px; 
+    background-color: red;
+
+}
+.login2 {
+    background-color: #545560;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    width: 80px;
+    padding-left: 10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+
+.login2 a {
+  text-decoration: none;
+  color: white;
+}
+.log2 a:hover {
+  color: white;
+}
+.log2 i {
+  color: white;
+  padding: 0 10px 0 0;
+}
+p.log2 {
+  margin-bottom: 0;
+}
+.part2{
+    display: flex;
+justify-content: space-between;
+background-color: red;
+border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.list a {
+  color: white;
+  background-color: gray;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.list a:hover{
+    background-color: red;
+}
+#myLinks {
+  display: none;
+}
+
+  </style>
+  <body>
+    <div class="moblie-nav">
+      <div class="part1">
+        <div class="logo-mob">
+          <img src="/images/Logo_Main_V1.png" />
+        </div>
+        <div class="search" id="search-bar">
+          <input type="search" class="search-txt" placeholder="Search Site" />
+          <button class="s-btn" id="hhhh">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <div class="part2">
+        <div class="menu-i">
+            <div class="menu-icon" id="bc-menu" onclick="show()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+              <div id="bar4" class="bar"></div>
+            </div>
+      </div>
+      
+      <div class="login2">
+        <p class="log2">
+          <i class="fa-solid fa-lock" id="lock"></i><a href="#">Login</a>
+        </p>
+      </div>
+    </div>
+    <div id="myLinks" class="list">
+        <a href="#news">Personal</a>
+        <a href="#contact">Business</a>
+        <a href="#about">Commercial</a>
+        <a href="#news">About</a>
+        <a href="#contact">Work Cafe</a>
+        <a href="#about">Private Client</a>
+      </div>
+    <script>
+      var searchbar = document.getElementById("search-bar");
+      var menu = document.getElementById("main-h");
+      var icon = document.getElementsByClassName("s-btn")[0];
+      icon.onclick = function () {
+        searchbar.classList.toggle("active");
+        menu.classList.toggle("hide");
+      };
+
+      function show() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+    </script>
+  </body>
+</html>

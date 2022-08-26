@@ -584,6 +584,83 @@ tr {
   border-width: 1px !important;
 }
 
+.faq{
+    padding: 10% 10%;
+  }
+  
+  .faq h3{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .row-one ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .open-ac{
+    background-color: red;
+    height: 15vh !important;
+    display: flex;
+    flex-direction: row;
+    gap:20%;
+    margin-top: 5%;
+  }
+  
+  .arrow{
+    width: 15%;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .open-ac h3{
+    margin: auto;
+    width: 50%;
+    color:white;
+    font-size: 44px;
+    font-weight: 300;
+  }
+  
+  .accordion {
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+  }
+  
+  
+  .accordion:after {
+    content: '\25BC';
+    color: red;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\25B2";
+    color:red;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
 /* footer */
 @media only screen and (max-width:600px)  {
     .footer-main{
@@ -592,6 +669,90 @@ tr {
     .footer-nav{
         flex-direction: column;
         height: 200px !important;
+    }
+
+    .images img{
+        margin-top: 20%;
+    }
+    .santander-one{
+        height: 70vh;
+    }
+    .containers{
+        padding: 0 !important;
+        padding-top: 30% !important;
+    }
+    .row{
+        flex-direction: column !important;
+    }
+    .cardImg img{
+        width: 50vw;
+        margin-left:20% ;
+    }
+    .row p{
+        width: 80vw;
+    }
+    .para{
+        width: 75vw !important;
+    }
+    .button2{
+        width: 50vw !important;
+    }
+    .santander-two{
+        height: 130vh !important;
+    }
+    .para2{
+        width: 75vw !important;
+    }
+    .img-div{
+        background-size: 100vw !important;
+    }
+    .benfits-overlay{
+        height: 45vh !important;
+    }
+    .cards{
+        width: 83vw !important;
+    }
+    .benfits-container{
+        height: 200vh !important;
+    }
+    .img5, .img6{
+        width: 80vw !important;
+    }
+    .one h1,.ul-private-client{
+        width: 80vw !important;
+    }
+    .button3{
+        width: 50vw !important;
+    }
+
+    .two h1,.ul-private-client{
+        width: 80vw !important;
+    }
+    .mobile-row{
+        margin-left: 20vw !important;
+    }
+    .child img{
+        margin-left: 50% !important;
+        margin-top: 30% !important;
+    }
+    .child h4{
+        margin-left: 120% !important;
+        width: 50vw !important;
+    }
+    .mobile-row p{
+        margin-left: 50% !important;
+    }
+    .btn-mobile{
+        margin-left: 50% !important;
+    }
+    .footer-row{
+        width: 90vw !important;
+    }
+    .footer-main{
+        height: 100vh !important;
+    }
+    .first-col{
+        width: 50vw !important;
     }
 }
 

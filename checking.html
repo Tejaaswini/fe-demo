@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="checking.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpliicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+</head>
+
+<body>
+  <header class="nav-menu">
+    <div class="part-one">
+      <div class="logo">
+        <img src="./images/Logo_Main_V1.png" />
+      </div>
+      <div class="search">
+        <input type="search" class="input-box" placeholder="Search" /><i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div class="part-two">
+      <div>
+        <ul class="ul-list">
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work Cafe</a></li>
+          <li class="current">
+            <a href="#">Private Client</a>
+          </li>
+        </ul>
+      </div>
+      <div class="atm">
+        <ul class="ul-list">
+          <li>
+            <a href="#" class="atm-brand">ATM/Brand Locator</a>
+          </li>
+          <i class="fa-solid fa-location-dot"></i>
+        </ul>
+      </div>
+    </div>
+    <div class="red-nav">
+      <div class="banking">
+        <p>Banking</p>
+      </div>
+      <div class="login">
+        <p class="log">
+          <i class="fa-solid fa-lock" id="lock"></i><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1st section -->
+  <section id="top">
+    <div class="main">
+      <div class="santander-one ftw">
+        <div class="overlay">
+          <h1>Santander&reg; Private Client</h1>
+          <p>Enjoy exclusive benefits and a relationship banker who takes care of your<br />
+            interest-bearing checking account.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sub-hero">
+      <h2>
+        Eligibility for a <br />Santander Private Client Checking Account
+      </h2>
+      <div class="right-align">
+        <h3>
+          Client must maintain a minimum combined balance of at least <span
+            style="color:red">$250,000</span>.<sup>1</sup>
+        </h3>
+        <p>This combined balance includes consumer and certain business deposit products, and eligible investments held
+          with Santander Investment Services.<sup>2</sup></p>
+        <button class="sub-hero-btn">Open an account</button>
+      </div>
+    </div>
+    <div class="secondary-hero">
+      <div class="main-con">
+        <div class="image">
+          <img src="./images/hero.png" />
+        </div>
+        <div class="private">
+          <h3>Santander Private Client Checking benefits</h3>
+        </div>
+        <div class="line"></div>
+        <div class="priority-services">
+          <h3>Priority services</h3>
+          <ul>
+            <li>Dedicated customer service line</li>
+            <li>
+              Day-to-day banking needs fully managed by a relationship banker
+            </li>
+            <li>
+              An on-demand team of financial specialists to provide support and
+              guidance
+            </li>
+          </ul>
+        </div>
+
+        <div class="two">
+          <div class="discounts">
+            <div class="lines"></div>
+            <h3>Exclusive discounts</h3>
+            <ul>
+              <li>
+                Rate discounts on eligible consumer loans with automatic payment
+                from any Santander Private Client Checking Account
+              </li>
+              <li>
+                No charge for Santander Private Client style or Santander Wallet
+                Exclusive checks, or a 50% discount on alternate designs
+              </li>
+              <li>
+                No charge for the smallest size safe deposit box and a 50%
+                discount on other sizes
+              </li>
+            </ul>
+          </div>
+          <div class="extras">
+            <div class="lines"></div>
+            <h3>Extras</h3>
+            <ul>
+              <li>No Monthly Fee.</li>
+              <li>
+                No fees for incoming domestic or international wires or domestic
+                outgoing wires
+              </li>
+              <li>No fee for money orders or official bank checks</li>
+              <li>No fees for Overdraft Protection Transfers</li>
+              <li>
+                Unlimited ATM Surcharge Fee rebates for ATM fees charged by
+                other institutions when using non-Santander ATMs
+              </li>
+              <li>
+                For additional details, please refer to the
+                <span>Santander Private Client Fee Schedule.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Benefits -->
+  <div class="benefits">
+    <div class="credit-card">
+      <img src="./images/card.png" />
+    </div>
+    <div class="exp-benefits">
+      <div class="exp-header">
+        <h3>
+          Exceptional benefits<br />
+          unrestrained by borders
+        </h3>
+        <p>Your new Santander Private Client
+          World Debit Mastercard® comes with:</p>
+      </div>
+      <div class="row-one">
+        <div>
+          <h3>
+            Convenience
+          </h3>
+          <ul>
+            <li>Manage and access your money anywhere, any time.
+              Use your card for everyday purchases online, in person,
+              or through your digital wallet using Apple Pay®</li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h3>
+            Travel benefits
+          </h3>
+          <ul>
+            <li>Premium travel benefits with Mastercard Concierge
+              Services, Travel Protection<sup>3</sup> and Priority Pass membership,
+              the world’s leading airport lounge program</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row-one">
+        <div class="security-container">
+          <h3>
+            Security
+          </h3>
+          <ul>
+            <li>Zero Liability<sup>4</sup> for unauthorized purchases, Extended
+              Warranty, Purchase Assurance, and Satisfaction
+              Guarantee</li>
+            <li>Instant Card Hold5 using the Mobile Banking App to turn
+              your card off, if and when you need it</li>
+          </ul>
+        </div>
+
+
+        <div class="extras-container">
+          <h3>
+            Extras
+          </h3>
+          <ul>
+            <li>Unlimited ATM surcharge fee rebates</li>
+            <li>No foreign transaction fees for purchases and ATM withdrawals</li>
+            <li>No fees to use more than 30,000 Santander ATMs globally</li>
+            <li>No fee for expedited replacement debit Mastercard</li>
+            <p>For additional details, please refer to the <span
+                style="text-decoration:underline; color:red; cursor: pointer; ">Santander Private Client Fee
+                Schedule.</span></p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="open-ac">
+    <h3>Open an account today</h3>
+    <div class="arrow">
+      <img src="./images/arrow.png" />
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h3>Frequently asked questions</h3>
+    <button class="accordion">How do I become a Santander Private Client?</button>
+    <div class="panel">
+      <p>We understand your time is valuable, that’s why we’re offering both in-person and digital account 
+        application processes for Private Client. You can open a Santander® 
+        Private Client Checking Account by visiting any <span style="color:red; text-decoration:underline">Santander branch</span> or by 
+        <span style="color:red; text-decoration:underline">applying online </span>today.
+      </p>
+    </div>
+    <hr class="breaking-line" />
+
+    <button class="accordion">What do I need to qualify for Santander Private Client?</button>
+    <div class="panel">
+      <p>In order to qualify for and remain in Private Client, you must maintain 
+        combined balances of $250,0001 in bank deposits; 
+        including consumer and certain business deposit products*, and eligible 
+        investments held with Santander Investment Services.<sup>**</sup>
+      </p>
+    </div>
+    <hr class="breaking-line" />
+
+    <button class="accordion">How do I become a Santander Private Client?</button>
+    <div class="panel">
+      <p>We understand your time is valuable, that’s why we’re offering both in-person and digital account 
+        application processes for Private Client. You can open a Santander® 
+        Private Client Checking Account by visiting any <span style="color:red; text-decoration:underline">Santander branch</span> or by 
+        <span style="color:red; text-decoration:underline">applying online </span>today.
+      </p>
+    </div>
+    <hr class="breaking-line" />
+
+    <button class="accordion">Who can I speak with to learn more?</button>
+    <div class="panel">
+      <p>You can visit or call any of our local Santander branches to speak with
+         a banker and learn more about Santander Private Client today.
+      </p>
+    </div>
+    <hr class="breaking-line" />
+
+    <button class="accordion">How do I set up my new Santander Private Client account?</button>
+    <div class="panel">
+      <p>Take advantage of all the benefits of your account and banking relationship
+         with Santander® Private Client. For quick and easy access to everything 
+         you need to set up and manage your account, visit our
+         <span style="color:red; text-decoration:underline">Santander Private</span>
+         Client Account Set-up page.
+      </p>
+    </div>
+    <hr class="breaking-line" />
+  </div>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  </section>
+  <footer class="footer-main">
+    <div class="footer-nav">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">Terms of Use</a></div>
+          <div><a href="#">Privacy Policy</a></div>
+          <div><a href="#">Contact Us</a></div>
+      </div>
+      <div class="container">
+        <div class="row footer-row">
+            <div class="col-4 first-col">
+                <div class="footer-col">
+                    <h4>Santander Bank</h4>
+                    <ul>
+                      <li><a href="#">Account set-up</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-4 first-col">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Media Center</a></li>
+                      <li><a href="#">Shareholder Relations</a></li>
+                      <li><a href="#">Community</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-4 first-col">
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                      <li><a href="#">Customer Service</a></li>
+                      <li><a href="#">Privacy and Security</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Site Map</a></li>
+                      <li><a href="#">Accessibility</a></li>
+                      <li>
+                        <a href="#">Servicemember Civil Relief Act (SCRA) Benefits</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Help For Homeowners Having Difficulty Paying Their
+                          Mortgage</a
+                        >
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="info3">
+                  &copy;2021 Santander Bank, N. A.
+                  <img src="images/home-icon.png" alt="home-icon" width="19px" />
+                  Equal Housing Lender - Member FDIC
+            </div>
+            <div class="icon">
+             <div>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             </div>
+             <div>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             </div>
+             <div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             </div>
+            </div>
+         </div>
+      </div>
+     
+</footer>
+<div class="apple-google">
+    <img
+      src="images/image 96.png"
+      alt="applestore"
+      width="9%"
+      class="apple-store"
+    />
+    <img
+      src="images/image 97.png"
+      alt="applestore"
+      width="10%"
+      class="google-play"
+    />
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
